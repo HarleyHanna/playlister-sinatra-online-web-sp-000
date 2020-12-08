@@ -38,7 +38,7 @@ class SongsController < ApplicationController
     @song.artist = Artist.find_or_create_by(params[:artist][:name])
     @song.genred_ids = params[:genres]
     @song.save
-    flash[:message] = "Successfully updated Song."
+    flash[:message] = "Successfully updated song."
     redirect to "/songs/#{@song.slug}"
   end
 
