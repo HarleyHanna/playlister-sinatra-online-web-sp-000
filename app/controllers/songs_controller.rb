@@ -5,7 +5,7 @@ class SongsController < ApplicationController
 
 
   get '/songs' do
-    @songs = Song.all
+    @song = Song.all
     erb :'/songs/index'
   end
 
